@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body class="auth-page">
+    <div class="form-container">
+        <button class="back-button" onclick="history.back()">← Quay lại</button>
+        <h2>🆕 Tạo Tài Khoản</h2>
+        <form id="register-form">
+            <input type="text" id="name" placeholder="Họ và tên" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Mật khẩu" required>
+            <input type="password" id="confirm-password" placeholder="Nhập lại mật khẩu" required>
+            <input type="tel" id="phone" placeholder="Số điện thoại" required>
+            <button class="submit-btn" type="submit">Tạo tài khoản</button>
+        </form>
+    </div>
+
+    <script>
+    document.addEventListener('keydown', function(e) {
+        if (e.key.toLowerCase() === 'f') {
+            document.getElementById('name').value = 'Nguyen Van A';
+            document.getElementById('email').value = 'DoAnNhom@gmail.com';
+            document.getElementById('password').value = '123456789';
+            document.getElementById('confirm-password').value = '123456789';
+            document.getElementById('phone').value = '0123456789';
+            setTimeout(() => {
+                document.getElementById('register-form').requestSubmit();
+            }, 500);
+        }
+    });
+
+    document.getElementById('register-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const pass = document.getElementById('password').value;
+        const confirm = document.getElementById('confirm-password').value;
+
+        if (pass !== confirm) {
+            alert('Mật khẩu không khớp!');
+            return;
+        }
+
+        alert('Tạo tài khoản thành công!');
+        window.location.href = 'index.html';
+    });
+    </script>
+</body>
+</html>

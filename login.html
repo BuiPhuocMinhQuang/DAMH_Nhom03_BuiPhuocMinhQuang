@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body class="auth-page">
+    <div class="form-container">
+        <button class="back-button" onclick="history.back()">← Quay lại</button>
+        <h2>Đăng Nhập</h2>
+        <button class="google-login">Đăng nhập bằng Google</button>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Mật khẩu" required>
+            <label class="checkbox-label">
+                <input type="checkbox"> Ghi nhớ
+            </label>
+            <button class="submit-btn" type="submit">Đăng Nhập</button>
+        </form>
+        <p class="links">
+            <a href="forgot_password.html">Quên mật khẩu?</a> | <a href="register.html">Tạo tài khoản mới</a>
+        </p>
+    </div>
+
+    <script>
+    document.addEventListener('keydown', function(e) {
+        if (e.key.toLowerCase() === 'f') {
+            document.getElementById('email').value = 'DoAnNhom@gmail.com';
+            document.getElementById('password').value = '123456789';
+            setTimeout(() => {
+                document.getElementById('login-form').requestSubmit();
+            }, 500);
+        }
+    });
+
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const pass = document.getElementById('password').value;
+
+        if (email === 'DoAnNhom@gmail.com' && pass === '123456789') {
+            alert('Đăng nhập thành công!');
+            window.location.href = 'index.html';
+        } else {
+            alert('Sai thông tin đăng nhập!');
+        }
+    });
+    </script>
+</body>
+</html>
