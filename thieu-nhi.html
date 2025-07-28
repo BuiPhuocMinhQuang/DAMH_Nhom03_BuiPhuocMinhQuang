@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim Thiếu Nhi - Anh Em FilmS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>Anh Em FilmS</h1>
+                <p>Web Phim Online</p>
+            </div>
+            <div class="nav-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="phim-bo.html">Phim Bộ</a></li>
+                <li><a href="phim-le.html">Phim Lẻ</a></li>
+                <li><a href="phim-rap.html">Phim Rạp</a></li>
+                <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+                <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+                <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+                <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+            </div>
+            <button class="login-btn">Đăng nhập</button>
+        </nav>
+    </header>
+
+    <main class="container movie-list">
+        <!-- Phim Thiếu Nhi Page -->
+        <div id="thieu-nhi" class="page">
+            <h1 class="page-title">Phim Thiếu Nhi</h1>
+            <div class="movies-grid">
+                <div class="movie-card" onclick="showMovieDetail('vung-dat-cau-vong')">
+                    <img src="img/vung-dat-cau-vong.png" alt="Vùng Đất Cầu Vồng" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Vùng Đất Cầu Vồng</div>
+                        <div class="movie-date">10.05.2025</div>
+                    </div>
+                </div>
+
+                <div class="movie-card" onclick="showMovieDetail('chuyen-cua-be-gau')">
+                    <img src="img/chuyen-cua-be-gau.png" alt="Chuyện Của Bé Gấu" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Chuyện Của Bé Gấu</div>
+                        <div class="movie-date">20.06.2025</div>
+                    </div>
+                </div>
+
+                <div class="movie-card" onclick="showMovieDetail('hanh-trinh-cua-sao')">
+                    <img src="img/hanh-trinh-cua-sao.png" alt="Hành Trình Của Sao" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Hành Trình Của Sao</div>
+                        <div class="movie-date">15.07.2025</div>
+                    </div>
+                </div>
+
+                <div class="movie-card" onclick="showMovieDetail('nhung-chu-meo-phi-thuong')">
+                    <img src="img/nhung-chu-meo-phi-thuong.png" alt="Những Chú Mèo Phi Thường" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Những Chú Mèo Phi Thường</div>
+                        <div class="movie-date">01.06.2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie Detail Pages -->
+        <div id="detail-vung-dat-cau-vong" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/vung-dat-cau-vong.png" alt="Vùng Đất Cầu Vồng" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Vùng Đất Cầu Vồng</h2>
+                    <p class="detail-description">
+                        "Vùng Đất Cầu Vồng" là một bộ phim hoạt hình đầy màu sắc kể về cuộc phiêu lưu của cô bé Linh trong một thế giới kỳ diệu nơi mọi thứ đều được tạo nên từ cầu vồng. Linh cùng chú kỳ lân nhỏ đáng yêu phải tìm cách khôi phục màu sắc cho vùng đất khi một thế lực bí ẩn khiến cầu vồng biến mất. Bộ phim mang thông điệp về tình bạn và sự đoàn kết, phù hợp cho cả gia đình cùng thưởng thức.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-chuyen-cua-be-gau" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/chuyen-cua-be-gau.png" alt="Chuyện Của Bé Gấu" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Chuyện Của Bé Gấu</h2>
+                    <p class="detail-description">
+                        Bộ phim "Chuyện Của Bé Gấu" xoay quanh hành trình của chú gấu con tên Mít, sống trong một khu rừng xanh tươi. Khi khu rừng bị đe dọa bởi một nhóm thợ săn, Mít cùng những người bạn động vật khác phải hợp sức để bảo vệ ngôi nhà của mình. Với những tình huống hài hước và bài học về lòng dũng cảm, bộ phim là lựa chọn tuyệt vời cho các khán giả nhí.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-hanh-trinh-cua-sao" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/hanh-trinh-cua-sao.png" alt="Hành Trình Của Sao" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Hành Trình Của Sao</h2>
+                    <p class="detail-description">
+                        "Hành Trình Của Sao" là câu chuyện về một ngôi sao nhỏ rơi xuống Trái Đất và được một nhóm trẻ em tìm thấy. Các em cùng nhau giúp ngôi sao trở về bầu trời bằng cách vượt qua những thử thách thú vị. Bộ phim mang đến thông điệp về ước mơ và sự kiên trì, với những hình ảnh lung linh và âm nhạc vui tươi, phù hợp cho khán giả ở mọi lứa tuổi.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-nhung-chu-meo-phi-thuong" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/nhung-chu-meo-phi-thuong.png" alt="Những Chú Mèo Phi Thường" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Những Chú Mèo Phi Thường</h2>
+                    <p class="detail-description">
+                        Bộ phim "Những Chú Mèo Phi Thường" kể về bốn chú mèo con sống trong một thành phố sôi động, nơi chúng phát hiện ra mình có những khả năng đặc biệt. Cùng nhau, các chú mèo sử dụng sức mạnh của mình để giúp đỡ những người gặp khó khăn và ngăn chặn một kế hoạch phá hoại thành phố. Với cốt truyện vui nhộn và hình ảnh sinh động, bộ phim là món quà tuyệt vời cho các bạn nhỏ yêu thích động vật.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

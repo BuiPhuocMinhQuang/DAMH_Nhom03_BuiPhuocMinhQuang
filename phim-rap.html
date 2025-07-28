@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim Rạp - Anh Em FilmS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>Anh Em FilmS</h1>
+                <p>Web Phim Online</p>
+            </div>
+            <div class="nav-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="phim-bo.html">Phim Bộ</a></li>
+                <li><a href="phim-le.html">Phim Lẻ</a></li>
+                <li><a href="phim-rap.html">Phim Rạp</a></li>
+                <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+                <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+                <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+                <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+            </div>
+            <button class="login-btn">Đăng nhập</button>
+        </nav>
+    </header>
+
+    <main class="container movie-list">
+        <!-- Phim Rạp Page -->
+        <div id="phim-rap" class="page">
+            <h1 class="page-title">Phim Rạp</h1>
+            <div class="movies-grid">
+                <div class="movie-card" onclick="showMovieDetail('nguoi-nhen-moi')">
+                    <img src="img/nguoi-nhen-moi.png" alt="Người Nhện Mới" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Người Nhện Mới</div>
+                        <div class="movie-date">15.06.2025</div>
+                    </div>
+                </div>
+
+                <div class="movie-card" onclick="showMovieDetail('cuoc-chien-anh-sang')">
+                    <img src="img/cuoc-chien-anh-sang.png" alt="Cuộc Chiến Ánh Sáng" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Cuộc Chiến Ánh Sáng</div>
+                        <div class="movie-date">10.07.2025</div>
+                    </div>
+                </div>
+
+                <div class="movie-card" onclick="showMovieDetail('bi-mat-sau-lung')">
+                    <img src="img/bi-mat-sau-lung.png" alt="Bí Mật Sau Lưng" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Bí Mật Sau Lưng</div>
+                        <div class="movie-date">01.07.2025</div>
+                    </div>
+                </div>
+
+                <div class="movie-card" onclick="showMovieDetail('hanh-tinh-vang')">
+                    <img src="img/hanh-tinh-vang.png" alt="Hành Tinh Vàng" class="movie-poster">
+                    <div class="movie-info">
+                        <div class="movie-title">Hành Tinh Vàng</div>
+                        <div class="movie-date">20.06.2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie Detail Pages -->
+        <div id="detail-nguoi-nhen-moi" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/nguoi-nhen-moi.png" alt="Người Nhện Mới" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Người Nhện Mới</h2>
+                    <p class="detail-description">
+                        Bộ phim "Người Nhện Mới" kể về hành trình của một thiếu niên trẻ tuổi được ban tặng sức mạnh siêu nhiên sau khi bị một con nhện biến đổi gene cắn. Anh phải đối mặt với những thử thách mới trong một thành phố đầy tội phạm, đồng thời khám phá ý nghĩa thực sự của việc trở thành một anh hùng. Với sự hỗ trợ từ những người bạn thân thiết và một người cố vấn bí ẩn, Người Nhện Mới chiến đấu để bảo vệ thành phố khỏi một tổ chức tội phạm nguy hiểm đang âm mưu phá hủy mọi thứ.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-cuoc-chien-anh-sang" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/cuoc-chien-anh-sang.png" alt="Cuộc Chiến Ánh Sáng" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Cuộc Chiến Ánh Sáng</h2>
+                    <p class="detail-description">
+                        "Cuộc Chiến Ánh Sáng" là một bộ phim khoa học viễn tưởng hoành tráng, nơi nhân loại đối mặt với một cuộc xâm lược từ ngoài hành tinh. Một nhóm chiến binh dũng cảm, dẫn đầu bởi một nữ phi công tài năng, phải hợp sức để kích hoạt một vũ khí cổ xưa có khả năng cứu lấy Trái Đất. Bộ phim kết hợp những cảnh hành động mãn nhãn với câu chuyện cảm động về lòng dũng cảm và sự hy sinh.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-bi-mat-sau-lung" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/bi-mat-sau-lung.png" alt="Bí Mật Sau Lưng" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Bí Mật Sau Lưng</h2>
+                    <p class="detail-description">
+                        "Bí Mật Sau Lưng" là một bộ phim tâm lý giật gân xoay quanh một nhà báo điều tra phát hiện ra một bí mật kinh hoàng liên quan đến một tập đoàn quyền lực. Khi cô càng đào sâu, cô nhận ra rằng mạng sống của mình và gia đình đang bị đe dọa. Bộ phim dẫn dắt người xem qua những tình tiết bất ngờ, hé lộ sự thật đen tối đằng sau vẻ hào nhoáng của xã hội.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="detail-hanh-tinh-vang" class="movie-detail" style="display: none;">
+            <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+            <div class="detail-content">
+                <img src="img/hanh-tinh-vang.png" alt="Hành Tinh Vàng" class="detail-poster">
+                <div class="detail-info">
+                    <h2 class="detail-title">Hành Tinh Vàng</h2>
+                    <p class="detail-description">
+                        Bộ phim "Hành Tinh Vàng" kể về một nhóm nhà thám hiểm vũ trụ được cử đến một hành tinh bí ẩn được cho là chứa đựng nguồn tài nguyên quý giá. Tuy nhiên, họ sớm phát hiện ra rằng hành tinh này ẩn chứa những sinh vật kỳ lạ và những bí ẩn có thể đe dọa sự tồn tại của cả đoàn thám hiểm. Bộ phim là một hành trình khám phá đầy kịch tính với những cảnh quay tuyệt đẹp và thông điệp về lòng tham của con người.
+                    </p>
+                    <button class="watch-btn">Xem phim</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

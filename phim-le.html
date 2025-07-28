@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Phim</title>
+     <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+    <nav class="container">
+        <div class="logo">
+            <h1>Anh Em FilmS</h1>
+            <p>Web Phim Online</p>
+        </div>
+        <div class="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="phim-bo.html">Phim Bộ</a></li>
+            <li><a href="phim-le.html">Phim Lẻ</a></li>
+            <li><a href="phim-rap.html">Phim Rạp</a></li>
+            <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+            <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+            <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+            <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+        </div>
+        <button class="login-btn">Đăng nhập</button>
+    </nav>
+</header>
+
+    <main class="container movie-list">
+        <!-- Phim Lẻ Page -->
+       <div id="phim-le" class="page" style="display: none;">
+    <h1 class="page-title">Phim Lẻ</h1>
+    <div class="movies-grid">
+        <div class="movie-card" onclick="showMovieDetail('quy-an-tang')">
+            <img src="img/quy-an-tang.png" alt="Quỷ Ám Tàng" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Quỷ Ám Tàng</div>
+                <div class="movie-date">29.12.2023</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('hon-ma-ki-tuc-xa')">
+            <img src="img/hon-ma-ki-tuc-xa.png" alt="Hồn Ma Kí Túc Xá" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Hồn Ma Kí Túc Xá</div>
+                <div class="movie-date">2023</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('xac-chet-so-19')">
+            <img src="img/xac-chet-so-19.png" alt="Xác Chết Số 19" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Xác Chết Số 19</div>
+                <div class="movie-date">2023</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('hanh-phuc-mau')">
+            <img src="img/hanh-phuc-mau.png" alt="Hạnh Phúc Máu" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Hạnh Phúc Máu</div>
+                <div class="movie-date">2023</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Detail Pages -->
+<div id="detail-quy-an-tang" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/quy-an-tang.png" alt="Quỷ Ăn Tạng" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Tee Yod: Quỷ Ăn Tạng</h2>
+            <p class="detail-description">
+                Phim Tee Yod: Quỷ Ăn Tạng là một bộ phim kinh dị Thái Lan xoay quanh câu chuyện về một linh hồn khát máu nhập vào cơ thể của một cô gái trẻ ở ngôi làng hẻo lánh. Cô gái này sau đó trở nên hung ác và tàn bạo, khiến cho người dân trong làng sống trong sợ hãi và lo lắng. Anh trai của cô gái, Nadech Kugimiya thủ vai, quyết định điều tra và tìm cách trục xuất linh hồn độc ác này ra khỏi cơ thể em gái trước khi cô bị cái ác làm tan hoàn toàn. Trong phim, Denise Jelilcha Kapaun vào vai cô gái trẻ bị linh hồn ác quỷ nhập vào, mang lại sự ác chiêu và phức tạp cho nhân vật.
+            </p>
+            <p class="detail-description">
+                Rattanawadee Wongthong thủ vai người chị yêu quý của hai anh em, luôn ở bên hỗ trợ và giúp đỡ trong cuộc chiến chống lại cái ác.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-hon-ma-ki-tuc-xa" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/hon-ma-ki-tuc-xa.png" alt="Hồn Ma Kí Túc Xá" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Hồn Ma Kí Túc Xá</h2>
+            <p class="detail-description">
+                Thái Lan là quốc gia cho đời liên tục nhiều phim ma nhất Châu Á và vì thế cũng cho ra nhiều thể loại phim phá trộn nhất. Một trong những phim phá trộn thành công nhất là Dorm. Phim không chỉ tạo khóng khí lạnh lẽo, có đoạn cửa những bối cảnh man người và giai điệu piano thể lướng, tấn lụy mà còn là phim hiệm hỏi giữ được chất lượng phim kể cả trước và sau khi chuyển thể loại. Dorm là bộ phim về một cậu bé bị đưa vào trường nọi trú của cha và chịu sệt bật nạt và có lẽp của bạn bè. Ở đây, cậu kết bạn với một cậu bé có đơn giống như cậu... Những cảng lức cậu cảng nhận ra rằng người bạn này có nhiều điểm rất giống với cậu bé bị chết dưới trong câu chuyện ma học đường mà lũ học sinh hay kể. Bộ phim chuyển từ thể loại kinh dị sang phim tuổi thiểu niên một cách xuất sắc, cũng nhờ vào khả năng diễn xuất tự tốt đến xuất sắc của dàn diễn viên từ trẻ đến lớn trong bộ phim này.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-xac-chet-so-19" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/xac-chet-so-19.png" alt="Xác Chết Số 19" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Xác Chết Số 19</h2>
+            <p class="detail-description">
+                Phim Xác Chết Số 19 kể về Chon bị khuyết tật tâm trần trong bối những giấc mơ khùng khiếp. Anh có ép bản thân không được ngủ để tránh so với các con ác mộng cũ trần về mối tình anh chọp mát. Trong con ác mộng của anh, luôn vấng vẳng những tiếng gào thét của một cô gái cậu mong giúp đỡ trước khi cô bị giết chết. Cách tận nhần. Ae, chỉ Chon lo lắng về những ão anh Chon nhìn thấy trong giấc mơ của anh sẽ làm anh hướng xấu đến sức khỏe của anh, vì vậy cô giới thiệu anh đến một bác sĩ tâm thần. Chon có găng chứng minh những gì anh thấy không chỉ là ảo tướng. Cuối cùng, Chon đã dũng khí có đấu mọi thứ trong những con ác mộng của anh đưa anh đến nhà xác số 19. Từ đó, câu chuyện về xác chết trong nhà xác được dần dần hé lộ.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-hanh-phuc-mau" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/hanh-phuc-mau.png" alt="Hạnh Phúc Máu" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Hạnh Phúc Máu</h2>
+            <p class="detail-description">
+                Bộ phim kể về bi kịch của dòng họ Vương Đình, nơi người chủ gia đình thường đứng những bữa tiệc ma thuật để khống chế các thành biên. Người mẹ vì là thể gia trưởng mà trong nam kinh nữ, ấm sang vị con gái mà thù hận măn. Bộ phải lựa chọn giữ các nhưng hành động cụng mình, đận vậy ta tội lỗi mình gay ra, những ần sâu vẫn là tình mẫu tử thiêng lieng, thường yêu con vô điều kiện của người mẹ.
+            </p>
+            <p class="detail-description">
+                Hạnh phúc máu là một bộ phim tâm lý - giết gần kết hợp với kinh dị của Việt Nam và cũng là dự án điện ảnh đáu tay của Đạng sí Tiến, do anh và điên kích Phạm Hương Hữu Tài đồng sản xuất. Bộ phim có chủ đề xoay quanh các dạng bạo ngại, thuật định... trong văn hóa của nhiệng Đổng. Bộ phim có sự quy tụ của nhiều diễn viên nỗi tiếng và gạo cợi trong làng điện ành như NSND Kim Xuân, NSƯT Lê Thiện, NSƯT Công Minh, NS Kim Huyền, Đạng sí Tiền, Phạm Hương Hữu Tài... Bộ phim cũng đã đánh dấu sự trở lại của NSND Kim Xuân ở lĩnh vực điện ảnh.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
