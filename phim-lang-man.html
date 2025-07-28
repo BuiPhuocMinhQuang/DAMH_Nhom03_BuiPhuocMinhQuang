@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Phim</title>
+     <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+<body class="auth-page">
+    <header>
+    <nav class="container">
+        <div class="logo">
+            <h1>Anh Em FilmS</h1>
+            <p>Web Phim Online</p>
+        </div>
+        <div class="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="phim-bo.html">Phim Bộ</a></li>
+            <li><a href="phim-le.html">Phim Lẻ</a></li>
+            <li><a href="phim-rap.html">Phim Rạp</a></li>
+            <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+            <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+            <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+            <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+        </div>
+        <button class="login-btn">Đăng nhập</button>
+    </nav>
+</header>
+
+    <main class="container movie-list">
+        <!-- Phim Lãng Mạn Page -->
+       <div id="phim-lang-man" class="page" style="display: none;">
+    <h1 class="page-title">Phim Lãng Mạn</h1>
+    <div class="movies-grid">
+        <div class="movie-card" onclick="showMovieDetail('materialists')">
+            <img src="img/MV5BNmQxMTI1YmEtOGY3Yi00NzVlLWEzMjAtYTI1NWZkNDFiMDg1XkEyXkFqcGc@._V1_.jpg" alt="Phim : Materialists" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Materialists</div>
+                <div class="movie-date">13.06.2025</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('bridget-jones-mad-about-the-boy')">
+            <img src="img/MV5BMDdlY2Y2ZWEtYjk4Mi00Yjg3LWFlM2MtMWI1ZjVlNGQ5NTNjXkEyXkFqcGc@._V1_.jpg" alt="Phim : Bridget Jones: Mad About the Boy" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Bridget Jones: Mad About the Boy</div>
+                <div class="movie-date">13.02.2025</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('the-wedding-banquet-remake')">
+            <img src="img/The_Wedding_Banquet_2025_poster.jpg" alt="Phim : The Wedding Banquet (Remake)" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : The Wedding Banquet (Remake)</div>
+                <div class="movie-date">18.04.2025</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('picture-this')">
+            <img src="img/Picture-This-Movie-Poster.jpg" alt="Phim : Picture This" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Picture This</div>
+                <div class="movie-date">06.03.2025</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Detail Pages -->
+<div id="detail-materialists" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/MV5BNmQxMTI1YmEtOGY3Yi00NzVlLWEzMjAtYTI1NWZkNDFiMDg1XkEyXkFqcGc@._V1_.jpg" alt="Phim : Materialists" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Materialists</h2>
+            <p class="detail-description">
+                Thể loại: Hài – Lãng mạn – Hiện đại
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Celine Song
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính: Dakota Johnson, Chris Evans, Pedro Pascal
+            </p>
+            <p class="detail-description">
+                Nội dung: Một nữ mai mối thành đạt rơi vào tam giác tình yêu giữa bạn trai cũ và một triệu phú quyến rũ tại New York. Câu chuyện hài hước nhưng sâu sắc về lòng tin, tình yêu và giá trị vật chất thời hiện đại. 
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 13.06.2025 .
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-bridget-jones-mad-about-the-boy" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/MV5BMDdlY2Y2ZWEtYjk4Mi00Yjg3LWFlM2MtMWI1ZjVlNGQ5NTNjXkEyXkFqcGc@._V1_.jpg" alt="Phim : Bridget Jones : Mad About the Boy" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Bridget Jones : Mad About the Boy</h2>
+            <p class="detail-description">
+                Thể loại: Lãng mạn – Hài – Hồi tưởng
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Michael Morris
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính : Renée Zellweger, Hugh Grant (tin đồn)
+            </p>
+            <p class="detail-description">
+                Nội dung: Bridget trở lại với tư cách một người mẹ độc thân đầy nghị lực, bước vào một mối quan hệ mới sau những mất mát trong quá khứ. Vẫn giữ phong cách dí dỏm, lạc quan nhưng trưởng thành hơn.
+            </p>
+            <p class="detail-description">
+                Khởi chiếu : 13.02.2025
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-the-wedding-banquet-remake" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/The_Wedding_Banquet_2025_poster.jpg" alt="Phim : The Wedding Banquet (Remake)" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : The Wedding Banquet (Remake)</h2>
+            <p class="detail-description">
+                Thể loại: Hài – Lãng mạn – Gia đình – LGBTQ+
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Andrew Ahn
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính: Bowen Yang, Lily Gladstone, Kelly Marie Tran, Han Gi-chan, Joan Chen, và Youn Yuh-jung.
+            </p>
+            <p class="detail-description">
+                Nội dung: Bản làm lại của bộ phim nổi tiếng năm 1993 của Lý An, kể về một người đàn ông đồng tính giả vờ kết hôn để làm hài lòng cha mẹ. Tình huống oái oăm dẫn đến những khoảnh khắc dở khóc dở cười nhưng cũng đầy cảm xúc.
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 18.04.2025
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-picture-this" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/Picture-This-Movie-Poster.jpg" alt="Phim : Picture This" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Picture This</h2>
+            <p class="detail-description">
+                Thể loại: Hài – Lãng mạn – Gia đình – LGBTQ+
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Prarthana Mohan
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính : Simone Ashley , Hero Fiennes Tiffin
+            </p>
+            <p class="detail-description">
+                Nội dung: Một nhiếp ảnh gia trẻ ở London quyết định quay lại hẹn hò sau cuộc chia tay đau lòng. Hành trình chữa lành trái tim và tìm thấy bản thân qua những cuộc gặp gỡ vừa ngọt ngào vừa hài hước.
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 06.03.2025 .
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <script src="js/script1.js"></script>
+</body>
+</html>

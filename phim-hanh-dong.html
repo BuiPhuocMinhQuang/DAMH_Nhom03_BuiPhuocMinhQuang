@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Phim</title>
+     <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+<body class="auth-page">
+    <header>
+    <nav class="container">
+        <div class="logo">
+            <h1>Anh Em FilmS</h1>
+            <p>Web Phim Online</p>
+        </div>
+        <div class="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="phim-bo.html">Phim Bộ</a></li>
+            <li><a href="phim-le.html">Phim Lẻ</a></li>
+            <li><a href="phim-rap.html">Phim Rạp</a></li>
+            <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+            <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+            <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+            <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+        </div>
+        <button class="login-btn">Đăng nhập</button>
+    </nav>
+</header>
+
+    <main class="container movie-list">
+        <!-- Phim Hành Động Page -->
+       <div id="phim-hanh-dong" class="page" style="display: none;">
+    <h1 class="page-title">Phim Hành Động</h1>
+    <div class="movies-grid">
+        <div class="movie-card" onclick="showMovieDetail('mat-danh-ke-toan-2')">
+            <img src="img/phim-chieu-rap-thang-5-2025-mat-danh-ke-toan-2.jpg" alt="Phim : Mật Danh : Kế Toán 2" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Mật Danh : Kế Toán 2</div>
+                <div class="movie-date">02.05.2023</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('mission-impossible-the-final-reckoning')">
+            <img src="img/MV5BZGQ5NGEyYTItMjNiMi00Y2EwLTkzOWItMjc5YjJiMjMyNTI0XkEyXkFqcGc@._V1_.jpg" alt="Phim : Mission : Impossible - The Final Reckoning" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Mission : Impossible - The Final Reckoning</div>
+                <div class="movie-date">21.05.2025</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('ballerina-from-the-world-of-john-wick')">
+            <img src="img/914yaGHBsgL._UF894,1000_QL80_.jpg" alt="Phim : Ballerina (From the World of John Wick)" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Ballerina (From the World of John Wick)</div>
+                <div class="movie-date">05.06.2025</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('captain-america-brave-new-world')">
+            <img src="img/MV5BNDRjY2E0ZmEtN2QwNi00NTEwLWI3MWItODNkMGYwYWFjNGE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Phim : Captain America : Brave New World" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Captain America : Brave New World</div>
+                <div class="movie-date">14.02.2025</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Detail Pages -->
+<div id="detail-mat-danh-ke-toan-2" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/phim-chieu-rap-thang-5-2025-mat-danh-ke-toan-2.jpg" alt="Phim : Mật Danh : Kế Toán 2" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Mật Danh : Kế Toán 2</h2>
+            <p class="detail-description">
+                Thể loại: Hành động – Tâm lý – Tội phạm
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Gavin O'Connor; kịch bản Bill Dubuque
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính:
+                    + Ben Affleck trở lại với vai Christian Wolff
+                    + Jon Bernthal, J.K. Simmons, Cynthia Addai-Robinson, Daniella Pineda
+            </p>
+            <p class="detail-description">
+                Nội dung: 8 năm sau phần 1, Wolff sống cuộc sống du mục với chiếc xe di động. Khi Ray King – người bạn cũ – bị giết, Wolff kết hợp với Marybeth Medina (Addai-Robinson) điều tra và phát hiện một âm mưu sát thủ đen tối nhắm vào Cục Tài chính Mỹ . 
+            </p>
+            <p class="detail-description">
+                Phản hồi: Phim nhận được đánh giá tích cực về diễn xuất của Affleck & Bernthal, tập trung vào mối quan hệ anh em và nhịp điệu dồn dập đầy chiều sâu cảm xúc .
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 02.05.2025 tại Việt Nam qua CGV, khán giả 18+ .
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-mission-impossible-the-final-reckoning" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/MV5BZGQ5NGEyYTItMjNiMi00Y2EwLTkzOWItMjc5YjJiMjMyNTI0XkEyXkFqcGc@._V1_.jpg" alt="Phim : Mission : Impossible - The Final Reckoning" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Mission : Impossible - The Final Reckoning</h2>
+            <p class="detail-description">
+                Thể loại: Hành động – Phiêu lưu – Gián điệp
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Christopher McQuarrie
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính : Tom Cruise, Hayley Atwell, Ving Rhames, Simon Pegg, Vanessa Kirby, Pom Klementieff
+            </p>
+            <p class="detail-description">
+                Nội dung: Ethan Hunt đối đầu với sứ mệnh nguy hiểm cuối cùng trong sự nghiệp IMF. Lần này, đối thủ là một trí tuệ nhân tạo mạnh mẽ tên là "The Entity", có khả năng xâm nhập mọi hệ thống mạng lưới toàn cầu. Trong hành trình lần này, Ethan không chỉ phải chạy đua với thời gian mà còn đối mặt với quá khứ của chính mình và mất mát đau lòng. Đây là phần kết cho cả chuỗi phim Mission: Impossible kéo dài hơn hai thập kỷ .
+            </p>
+            <p class="detail-description">
+                Khởi chiếu : 21.05.2025
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-ballerina-from-the-world-of-john-wick" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/914yaGHBsgL._UF894,1000_QL80_.jpg" alt="Phim : Ballerina (From the World of John Wick)" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Ballerina (From the World of John Wick)</h2>
+            <p class="detail-description">
+                Thể loại: Hành động – Giật gân – Tội phạm
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Len Wiseman
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính: Ana de Armas, Keanu Reeves, Ian McShane, Anjelica Huston, Norman Reedus
+            </p>
+            <p class="detail-description">
+                Nội dung: Lấy bối cảnh trong vũ trụ John Wick, Ballerina theo chân Eve – một nữ sát thủ trẻ được huấn luyện tại học viện Ruska Roma. Sau khi gia đình bị sát hại, cô lên đường tìm kiếm và tiêu diệt những kẻ đứng sau. Phim là sự kết hợp giữa các màn trình diễn ballet nghệ thuật với những pha hành động cực kỳ tàn bạo – đặc trưng của thế giới John Wick. Keanu Reeves sẽ có một vai cameo đáng nhớ trong phim .
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 05.06.2025
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-captain-america-brave-new-world" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/MV5BNDRjY2E0ZmEtN2QwNi00NTEwLWI3MWItODNkMGYwYWFjNGE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Phim : Captain America : Brave New World" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Captain America : Brave New World</h2>
+            <p class="detail-description">
+                Thể loại: Siêu anh hùng – Hành động – Chính trị
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Julius Onah
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính : Anthony Mackie, Harrison Ford, Tim Blake Nelson, Liv Tyler, Giancarlo Esposito
+            </p>
+            <p class="detail-description">
+                Nội dung: Sau khi nhận chiếc khiên từ Steve Rogers, Sam Wilson chính thức trở thành Captain America mới. Nhưng khi một âm mưu chính trị nguy hiểm nổi lên và General Ross trở thành Red Hulk, Sam phải đối mặt với những lựa chọn khó khăn. Không chỉ là cuộc chiến tay đôi, anh còn phải vượt qua định kiến và gánh vác biểu tượng nước Mỹ trong thời đại mới.
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 14.02.2025 .
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <script src="js/script1.js"></script>
+</body>
+</html>

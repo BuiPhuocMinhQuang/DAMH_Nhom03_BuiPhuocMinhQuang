@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Em FilmS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script href="JavaScript/index.js"></script> -->
+</head>
+<body class="auth-page">
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Anh Em FilmS</h1>
+            <p>Phim Online</p>
+        </div>
+        <div class="search-bar"> <!--id for search css-->
+            <input type="text" id="searchInput" placeholder="Tìm Kiếm...">
+            <button id="searchBtn">Tìm kiếm</button>
+        </div>
+        <div class="sign_up">
+            <a  class="login-btn"  href="login.html">Đăng Nhập</a>
+        </div>
+        
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Web Phim Online</a></li>
+            <select name="category" id="category">
+                <option value="all">Thể loại</option>
+                <option id="genrous">Hài </option>
+                <option id="action">Hành động</option>
+                <option id="hornor">Kinh dị</option>
+                <option id="music">Âm nhạc</option>
+                <option id="war">Chiến tranh</option>
+            </select>
+            <select name="country" id="country">
+                <option value="all">Quốc gia</option>
+                <option id="kr">Hàn Quốc</option>
+                <option id="Us">Hoa Kỳ</option>
+                <option id="VN">Việt Nạm</option>
+                <option id="JP">Nhật Bản</option>
+                <option id="CND">Cannada</option>
+            </select>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="phim-bo.html">Phim Bộ</a></li>
+            <li><a href="phim-le.html">Phim Lẻ</a></li>
+            <li><a href="phim-rap.html">Phim Rạp</a></li>
+            <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+            <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+            <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+            <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+        </ul>
+    </nav>
+
+    <!-- Trending Section -->
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="img/85970679301746819-tretrau.jpg">
+            </div>
+            <div class="item">
+                <img src="img/Paddington2025poster.jpg">
+            </div>
+            <div class="item">
+                <img src="img/phim-vang-trang-tho-au-1-9056_20240512151747.jpg">
+            </div>
+            <div class="item">
+                <img src="img/snow-white-500_1723432966462.jpg">
+            </div>
+            <div class="item">
+                <img src="img/mufasa-the-lion-king-movie-poster.jpg">
+            </div>
+            <div class="item">
+                <img src="img/phim_chieu_rap_thang_1_11_52abe1ac6c.jpg">
+            </div>
+            <div class="item">
+                <img src="img/XiPTNHhfeR5nFBSFMIqruv8xlu6UIDAiDZihz1iz.jpg">
+            </div>
+        </div>
+        <!--button next and previous-->
+        <div class="buttons">
+            <button id="prev">></button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li> </li>
+            <li></li>
+            <li></li>
+
+        </ul>
+    </div>
+        <script src="JavaScript/index.js"></script>
+   
+    <section class="trending">
+        <h2>Thịnh Hành</h2>
+        <div class="movie-list">
+            <!-- Movie Cards -->
+            <div class="movie-card" data-title="Phim : Trẻ Trâu Không Đùa Được Đâu">
+                <img src="img/85970679301746819-tretrau.jpg" alt="Phim : Trẻ Trâu Không Đùa Được Đâu">
+                <p>Phim : Trẻ Trâu Không Đùa Được Đâu</p>
+                <span class="badge">Trending</span>
+            </div>
+            <div class="movie-card" data-title="Phim : Paddington - Gấu Thủ Chu Du">
+                <img src="img/Paddington2025poster.jpg" alt="Phim : Paddington - Gấu Thủ Chu Du">
+                <p>Phim : Paddington - Gấu Thủ Chu Du</p>
+                <span class="badge">Trending</span>
+            </div>
+            <div class="movie-card" data-title="Phim : Vầng Trăng Thơ Ấu">
+                <img src="img/phim-vang-trang-tho-au-1-9056_20240512151747.jpg" alt="Phim : Vầng Trăng Thơ Ấu">
+                <p>Phim : Vầng Trăng Thơ Ấu</p>
+                <span class="badge">Trending</span>
+            </div>
+            <div class="movie-card" data-title="Phim : Snow White - Nàng Bạch Tuyết">
+                <img src="img/SNOW_WHITE_–_Vietnam_poster.jpg" alt="Phim : Snow White - Nàng Bạch Tuyết">
+                <p>Phim : Snow White - Nàng Bạch Tuyết</p>
+                <span class="badge">Trending</span>
+            </div>
+            <div class="movie-card" data-title="Phim : Quái Thú Đại Náo Sở Thú">
+                <img src="img/XiPTNHhfeR5nFBSFMIqruv8xlu6UIDAiDZihz1iz.jpg" alt="Phim : Quái Thú Đại Náo Sở Thú">
+                <p>Phim : Quái Thú Đại Náo Sở Thú</p>
+                <span class="badge">Trending</span>
+            </div>
+        </div>
+    </section>
+    <!-- internal JavaScript -->
+    <script>
+        let list = document.querySelector('.slider .list'); 
+        let items = document.querySelectorAll('.slider .list .item'); 
+        let dots = document.querySelectorAll('.slider .dots li');
+        let prev = document.getElementById('prev'); 
+        let next = document.getElementById('next');
+
+        let active = 0;
+        let lengthItems = items.length - 2; 
+
+        next.onclick = function() {
+            if (active + 1 > lengthItems) {
+                active = 0;
+            } else {
+                active = active + 1;
+            }
+            reloadSlider();
+        };
+
+        prev.onclick = function() {
+            if (active - 1 < 0) {
+                active = lengthItems;
+            } else {
+                active = active - 1;
+            }
+            reloadSlider();
+        };
+
+        let refreshSlider = setInterval(() => { next.click() }, 3000);
+
+        function reloadSlider() {
+            let checkLeft = items[active].offsetLeft;
+            list.style.left = -checkLeft + 'px';
+
+            let lastActiveDot = document.querySelector('.slider .dots li.active');
+            if (lastActiveDot) lastActiveDot.classList.remove('active');
+            dots[active].classList.add('active');
+            
+            clearInterval(refreshSlider);  
+            refreshSlider = setInterval(() => { next.click() }, 3000);
+        }
+
+        dots.forEach((li, key) => {  
+            li.addEventListener('click', function() {
+                active = key;
+                reloadSlider();
+            });
+        });
+
+        document.getElementById('searchBtn').addEventListener('click', function () {
+            let keyword = document.getElementById('searchInput').value.toLowerCase().trim();
+            let movies = document.querySelectorAll('.movie-card');
+
+        movies.forEach(function (card) {
+            let title = card.getAttribute('data-title') || '';
+            title = title.toLowerCase();
+
+            if (title.includes(keyword)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+
+        // Tự động hiện lại tất cả phim khi xóa nội dung tìm kiếm
+        document.getElementById('searchInput').addEventListener('input', function () {
+            let keyword = this.value.toLowerCase().trim();
+            let movies = document.querySelectorAll('.movie-card');
+
+            if (keyword === "") {
+                movies.forEach(function (card) {
+                card.style.display = 'block';
+            });
+        }
+    });
+
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchValue = this.value.toLowerCase();
+            const movieCards = document.querySelectorAll('.movie-card');
+
+        movieCards.forEach(function(card) {
+            const titleElement = card.querySelector('p');
+            const originalTitle = titleElement.dataset.original || titleElement.textContent;
+        
+            if (!titleElement.dataset.original) {
+                titleElement.dataset.original = originalTitle; // Lưu lại tiêu đề gốc
+            }
+
+            if (searchValue === '') {
+                card.style.display = 'block';
+                titleElement.innerHTML = originalTitle;
+            } else {
+                const lowerOriginal = originalTitle.toLowerCase();
+            if (lowerOriginal.includes(searchValue)) {
+                card.style.display = 'block';
+
+                // Tô đậm phần trùng khớp
+                const regex = new RegExp(`(${searchValue})`, 'gi');
+                const highlightedTitle = originalTitle.replace(regex, '<strong>$1</strong>');
+                titleElement.innerHTML = highlightedTitle;
+            } else {
+                card.style.display = 'none';
+            }
+        }
+    });
+});
+
+
+    </script>
+    
+</body>
+</html>
