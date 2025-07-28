@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Phim</title>
+     <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+<body class="auth-page">
+    <header>
+    <nav class="container">
+        <div class="logo">
+            <h1>Anh Em FilmS</h1>
+            <p>Web Phim Online</p>
+        </div>
+        <div class="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="phim-bo.html">Phim Bộ</a></li>
+            <li><a href="phim-le.html">Phim Lẻ</a></li>
+            <li><a href="phim-rap.html">Phim Rạp</a></li>
+            <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+            <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+            <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+            <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+        </div>
+        <button class="login-btn">Đăng nhập</button>
+    </nav>
+</header>
+
+    <main class="container movie-list">
+        <!-- Phim Cổ Trang Page -->
+       <div id="phim-co-trang" class="page" style="display: none;">
+    <h1 class="page-title">Phim Cổ Trang</h1>
+    <div class="movies-grid">
+        <div class="movie-card" onclick="showMovieDetail('harbin')">
+            <img src="img/MV5BNmY4YzM5NzUtMTg4Yy00Yzc3LThlZDktODk4YjljZmNlODA0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Phim : Harbin" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Harbin</div>
+                <div class="movie-date">25.12.2024</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('uprising')">
+            <img src="img/MV5BZDgyZjcxNzYtNGRkYi00NGEwLTgzNTgtZDBkODRjNWFiNGI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Phim : Mission : Uprising" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Uprising</div>
+                <div class="movie-date">11.10.2024</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('legends-of-the-condor-heroes')">
+            <img src="img/MV5BYmRmNjdkOGUtMGIyMC00NGEyLTk3M2EtNjg2NTM3MTNkZWYxXkEyXkFqcGc@._V1_.jpg" alt="Phim : Legends Of The Condor Heroes" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Legends Of The Condor Heroes</div>
+                <div class="movie-date">21.02.2025</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('creation-of-the-gods-II-demon-force')">
+            <img src="img/Creation_of_the_Gods_II_-_Demon_Force.jpg" alt="Phim : Creation Of The Gods II : Demon Force" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Phim : Creation Of The Gods II : Demon Force</div>
+                <div class="movie-date">29.01.2025</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Detail Pages -->
+<div id="detail-harbin" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/MV5BNmY4YzM5NzUtMTg4Yy00Yzc3LThlZDktODk4YjljZmNlODA0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Phim : Harbin" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Harbin</h2>
+            <p class="detail-description">
+                Thể loại: Lịch sử – Chiến tranh – Cổ trang
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Woo Min-ho
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính: Hyun Bin, Park Jeong-min, Jo Woo-jin, Jeon Yeo-bin
+            </p>
+            <p class="detail-description">
+                Nội dung: Lấy bối cảnh đầu thế kỷ 20 khi Triều Tiên bị Đế quốc Nhật đô hộ, “Harbin” kể về những người yêu nước mạo hiểm mạng sống để giành lại tự do. Nhân vật trung tâm là Ahn Jung-geun – người anh hùng có thật trong lịch sử, nổi tiếng với vụ ám sát Ito Hirobumi tại ga Harbin. Phim tái hiện không khí căng thẳng, tàn khốc của thời kỳ kháng chiến và lòng dũng cảm bất khuất của dân tộc Triều Tiên. 
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 25.12.2024 .
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-uprising" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/MV5BZDgyZjcxNzYtNGRkYi00NGEwLTgzNTgtZDBkODRjNWFiNGI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Phim : Uprising" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Uprising</h2>
+            <p class="detail-description">
+                Thể loại: Lịch sử – Chiến tranh – Cổ trang
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Kim Seong-hun
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính : Lee Byung-hun, Lee Jung-jae
+            </p>
+            <p class="detail-description">
+                Nội dung: Phim kể về cuộc khởi nghĩa có thật trong lịch sử Hàn Quốc chống lại ách đô hộ của Nhật Bản, tập trung vào các chiến sĩ kháng chiến và sự hi sinh thầm lặng của họ. Tái hiện những trận đánh khốc liệt cùng các mâu thuẫn chính trị bên trong phong trào độc lập, "Uprising" vừa mang tính sử thi, vừa đầy cảm xúc cá nhân.
+            </p>
+            <p class="detail-description">
+                Khởi chiếu : 11.10.2024
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-legends-of-the-condor-heroes" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/MV5BYmRmNjdkOGUtMGIyMC00NGEyLTk3M2EtNjg2NTM3MTNkZWYxXkEyXkFqcGc@._V1_.jpg" alt="Phim : Legends Of The Condor Heroes" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Legends Of The Condor Heroes</h2>
+            <p class="detail-description">
+                Thể loại: Kiếm hiệp – Lịch sử – Cổ trang
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Tsui Hark (Từ Khắc)
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính: Xiao Zhan, Crystal Liu (Lưu Diệc Phi), Donnie Yen
+            </p>
+            <p class="detail-description">
+                Nội dung: Dựa trên tiểu thuyết võ hiệp nổi tiếng của Kim Dung, phim kể về hành trình trưởng thành của Quách Tĩnh, từ một chàng trai ngây thơ trở thành anh hùng giang hồ chống lại quân xâm lược. Những mối tình ngang trái, tình huynh đệ, lòng yêu nước và võ công tuyệt đỉnh là điểm nhấn khiến bộ phim trở thành bom tấn cổ trang đáng mong đợi.
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 21.02.2025
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-creation-of-the-gods-II-demon-force" class="movie-detail">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/Creation_of_the_Gods_II_-_Demon_Force.jpg" alt="Phim : Creation Of The Gods II : Demon Force" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Phim : Creation Of The Gods II : Demon Force</h2>
+            <p class="detail-description">
+                Thể loại: Thần thoại – Cổ sử – Hành động – Kỳ ảo
+            </p>
+            <p class="detail-description">
+                Đạo diễn: Wuershan
+            </p>
+            <p class="detail-description"> 
+                Diễn viên chính : Kris Phillips, Huang Bo, Fei Xiang, Narana Erdyneeva
+            </p>
+            <p class="detail-description">
+                Nội dung: Phần tiếp theo của siêu phẩm thần thoại Trung Hoa, lấy cảm hứng từ “Phong Thần Diễn Nghĩa”. Tiếp nối cuộc chiến giữa Triều Thương và Chu Vũ Vương, phần này tập trung vào thế lực yêu ma quỷ quái dưới trướng Đát Kỷ và Trụ Vương. Những cuộc chiến giữa thần – người – yêu tinh sẽ đẩy ranh giới giữa thiện và ác đến tận cùng.
+            </p>
+            <p class="detail-description">
+                Khởi chiếu: 29.01.2025 .
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <script src="js/script1.js"></script>
+</body>
+</html>

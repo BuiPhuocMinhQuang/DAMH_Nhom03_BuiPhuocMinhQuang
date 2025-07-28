@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Phim - Phim Bộ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <nav class="container">
+        <div class="logo">
+            <h1>Anh Em FilmS</h1>
+            <p>Web Phim Online</p>
+        </div>
+        <div class="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="phim-bo.html">Phim Bộ</a></li>
+            <li><a href="phim-le.html">Phim Lẻ</a></li>
+            <li><a href="phim-rap.html">Phim Rạp</a></li>
+            <li><a href="thieu-nhi.html">Phim Thiếu Nhi</a></li>
+            <li><a href="phim-hanh-dong.html">Phim Hành Động</a></li>
+            <li><a href="phim-co-trang.html">Phim Cổ Trang</a></li>
+            <li><a href="phim-lang-man.html">Phim Lãng Mạn</a></li>
+        </div>
+        <button class="login-btn">Đăng nhập</button>
+    </nav>
+</header>
+
+    <main class="container movie-list">
+        <!-- Phim Bộ Page -->
+       <div id="phim-bo" class="page">
+    <h1 class="page-title">Phim Bộ</h1>
+    <div class="movies-grid">
+        <div class="movie-card" onclick="showMovieDetail('dien-hi-cong-luoc')">
+            <img src="img/dien-hi-cong-luoc.png" alt="Diên Hi Công Lược" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Diên Hi Công Lược</div>
+                <div class="movie-date">2018</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('lang-khach')">
+            <img src="img/lang-khach.png" alt="Lãng Khách" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Lãng Khách</div>
+                <div class="movie-date">2020</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('thien-long-bat-bo')">
+            <img src="img/thien-long-bat-bo.png" alt="Thiên Long Bát Bộ" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Thiên Long Bát Bộ</div>
+                <div class="movie-date">2021</div>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="showMovieDetail('hau-cung-nhu-y-truyen')">
+            <img src="img/hau-cung-nhu-y-truyen.png" alt="Hậu Cung Như Ý Truyện" class="movie-poster">
+            <div class="movie-info">
+                <div class="movie-title">Hậu Cung Như Ý Truyện</div>
+                <div class="movie-date">2018</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Detail Pages -->
+<div id="detail-dien-hi-cong-luoc" class="movie-detail" style="display: none;">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/dien-hi-cong-luoc.png" alt="Diên Hi Công Lược" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Diên Hi Công Lược</h2>
+            <p class="detail-description">
+                "Diên Hi Công Lược" là bộ phim cổ trang Trung Quốc kể về Ngụy Anh Lạc, một cung nữ thông minh vượt qua âm mưu hậu cung để trở thành Lệnh Phi. Với diễn xuất của Ngô Cẩn Ngôn và Hứa Khải, phim gây ấn tượng với bối cảnh hoành tráng và cốt truyện hấp dẫn.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-lang-khach" class="movie-detail" style="display: none;">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/lang-khach.png" alt="Lãng Khách" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Lãng Khách</h2>
+            <p class="detail-description">
+                "Lãng Khách" là phim võ hiệp kể về hành trình của Văn Nhân Tuấn và Triệu Hoài An trong giang hồ đầy nguy hiểm. Bộ phim nổi bật với pha hành động mãn nhãn và sự tham gia của Triệu Văn Trác.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-thien-long-bat-bo" class="movie-detail" style="display: none;">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/thien-long-bat-bo.png" alt="Thiên Long Bát Bộ" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Thiên Long Bát Bộ</h2>
+            <p class="detail-description">
+                "Thiên Long Bát Bộ" dựa trên tiểu thuyết của Kim Dung, kể về Kiều Phong, Đoàn Dự và Hư Trúc trong giang hồ hỗn loạn. Phim có các pha võ thuật đỉnh cao và cốt truyện cảm xúc.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-hau-cung-nhu-y-truyen" class="movie-detail" style="display: none;">
+    <button class="back-btn" onclick="backToMovies()">← Quay lại</button>
+    <div class="detail-content">
+        <img src="img/hau-cung-nhu-y-truyen.png" alt="Hậu Cung Như Ý Truyện" class="detail-poster">
+        <div class="detail-info">
+            <h2 class="detail-title">Hậu Cung Như Ý Truyện</h2>
+            <p class="detail-description">
+                "Hậu Cung Như Ý Truyện" kể về Kế Hoàng hậu Như Ý, một phi tần chịu nhiều bi kịch trong hậu cung. Với diễn xuất của Châu Tấn, phim mang đến cảm xúc sâu sắc.
+            </p>
+            <button class="watch-btn">Xem phim</button>
+        </div>
+    </div>
+</div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
